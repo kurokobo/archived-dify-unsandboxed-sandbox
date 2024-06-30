@@ -16,7 +16,7 @@
 ```yaml
 ...
   sandbox:
-    image: ghcr.io/kurokobo/dify-unsandboxed-sandbox:0.1.0
+    image: ghcr.io/kurokobo/dify-unsandboxed-sandbox:0.2.0
 ...
 ```
 
