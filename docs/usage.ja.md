@@ -27,3 +27,7 @@ docker compose down sandbox
 docker compose pull sandbox
 docker compose up -d sandbox
 ```
+
+## 追加機能
+
+サンドボックス内に `apt` でインストールしたいパッケージがある場合、`./volumes/sandbox/dependencies/apt-requirements.txt` に列挙することで、コンテナの起動時にインストールされます。

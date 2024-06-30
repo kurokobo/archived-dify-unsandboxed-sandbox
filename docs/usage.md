@@ -27,3 +27,7 @@ docker compose down sandbox
 docker compose pull sandbox
 docker compose up -d sandbox
 ```
+
+## Additional features
+
+If you have packages you want to install with `apt` in the sandbox, list them in `./volumes/sandbox/dependencies/apt-requirements.txt` and they will be installed when the container starts.
