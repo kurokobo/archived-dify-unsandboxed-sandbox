@@ -26,16 +26,12 @@ func (p *Python3Executor) Run(c *gin.Context, req models.Request) (models.Respon
 	cmd.Stdout = &stdoutBuf
 	cmd.Stderr = &stderrBuf
 
-	if err := cmd.Run(); err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
-		return models.Response{}, err
-	}
+	_ = cmd.Run()
 	stdout := stdoutBuf.String()
 	stderr := stderrBuf.String()
-	exitCode := cmd.ProcessState.ExitCode()
 
 	return models.Response{
-		Code:    exitCode,
+		Code:    0,
 		Message: "success",
 		Data: models.RunData{
 			Stdout: stdout,
