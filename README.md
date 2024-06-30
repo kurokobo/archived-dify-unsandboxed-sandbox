@@ -19,10 +19,11 @@ Dify's sandbox environment imposes various constraints on the code running in it
 
 This container image removes those constraints and makes it possible to run any code in the sandbox.
 
-| Tested languages |
-| --- |
-| ✅ Python |
-| ⛔ Node.js |
+| Blocks | Languages | Tested |
+| --- | --- | :---: |
+| **Code** | Python | ✅ |
+| **Code** | Node.js | - |
+| **Template** | Python | ✅ |
 
 ## Disclaimer
 
